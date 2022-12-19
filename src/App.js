@@ -1,12 +1,18 @@
 import React from "react";
+import { AuthProvider } from "./ contexts/auth";
 import Login from "./components/Login";
-import Routes from "./Routes";
+import { Routes, Route } from "react-router-dom";
+import Cadastro from "./components/Cadastro";
 
 const App = () => {
   return (
-    <Routes>
-      <Login />;
-    </Routes>
+    <AuthProvider>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/habitos" element={<></>} />
+      </Routes>
+    </AuthProvider>
   );
 };
 

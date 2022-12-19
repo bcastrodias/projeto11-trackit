@@ -5,14 +5,14 @@ const Login = () => {
   return (
     <>
       <img src="assets/imgs/TrackIt.png"></img>
-      <Input type="email">E-mail</Input>;<Input type="text">Senha</Input>
+      <label htmlFor="email">E-mail</label>
+      <Input id="email" type="email" />
+      <label htmlFor="password">Senha</label>
+      <Input id="password" type="text" />
       <Entrar>
-        {" "}
         <Link to="/habitos"></Link>
-      </Entrar>{" "}
-      ;
+      </Entrar>
       <Cadastro>
-        {" "}
         <Link to="/cadastro"> Não tem uma conta? Cadastre-se! </Link>
       </Cadastro>
     </>
