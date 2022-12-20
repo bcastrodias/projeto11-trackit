@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
-      <img src="assets/imgs/TrackIt.png"></img>
+      <img src="assets/imgs/logo.svg"></img>
       <label htmlFor="email">E-mail</label>
       <Input id="email" type="email" />
       <label htmlFor="password">Senha</label>
